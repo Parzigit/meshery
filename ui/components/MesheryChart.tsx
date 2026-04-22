@@ -71,8 +71,16 @@ const SocialIconWrapper = styled('span')(({ theme }) => ({
 }));
 
 const ShareIconContainer = styled('div')({
-  display: 'flex',
-  justifyContent: 'flex-end',
+  // display: 'flex',
+  // justifyContent: 'flex-end',
+  position: 'absolute',
+  top: 0,
+  right: 0,
+  zIndex: 1,
+});
+
+const ChartOuterWrapper = styled('div')({
+  position: 'relative',
 });
 
 function NonRecursiveConstructDisplayCells(data) {
